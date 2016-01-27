@@ -75,8 +75,8 @@ public class Main extends JFrame {
 		table.setToolTipText("");
 		scrollPane.setViewportView(table);
 		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setBounds(213, 199, 56, 16);
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setBounds(213, 199, 157, 144);
 		contentPane.add(lblNewLabel);
 	}
 }
