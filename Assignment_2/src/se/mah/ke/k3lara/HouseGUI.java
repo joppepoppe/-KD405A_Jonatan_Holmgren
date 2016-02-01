@@ -97,10 +97,10 @@ public class HouseGUI extends JFrame {
 		}
 
 		Random r = new Random();
-		int Low = 10;
-		int High = 1000;
-		int Low1 = 1800;
-		int High1 = 2015;
+		int Low = House.getMinYear();
+		int High = House.getMaxYear();
+		int Low1 = House.getMinSize();
+		int High1 = House.getMaxSize();
 
 		for (int z = 0; z < 100; z++) {
 			houseArmy.add(new House(r.nextInt(High - Low) + Low, r.nextInt(High1 - Low1) + Low1));
@@ -108,9 +108,9 @@ public class HouseGUI extends JFrame {
 
 		textArea.append("assignment1.4" + "\n");
 		for (int p = 0; p < houseArmy.size(); p++) {
-			System.out.println(houseArmy.get(p).getSize() + "\t" + houseArmy.get(p).getYearBuilt());
-			textArea.append(houseArmy.get(p).getSize() + "\t");
-			textArea.append(Integer.toString(houseArmy.get(p).getYearBuilt()));
+			System.out.println(houseArmy.get(p).getYearBuilt() + "\t" + houseArmy.get(p).getSize());
+			textArea.append(houseArmy.get(p).getYearBuilt() + "\t");
+			textArea.append(Integer.toString(houseArmy.get(p).getSize()));
 			textArea.append("\n");
 		}
 
