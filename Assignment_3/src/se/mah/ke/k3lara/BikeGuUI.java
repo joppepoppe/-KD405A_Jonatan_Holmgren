@@ -11,6 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
 
 public class BikeGuUI extends JFrame {
 
@@ -92,5 +93,21 @@ public class BikeGuUI extends JFrame {
 		});
 		GetAll.setBounds(457, 294, 178, 29);
 		contentPane.add(GetAll);
+		
+		JLabel lblOutput = new JLabel("Output");
+		lblOutput.setBounds(166, 29, 56, 16);
+		contentPane.add(lblOutput);
+		
+		JLabel lblColor = new JLabel("Color");
+		lblColor.setBounds(449, 29, 56, 16);
+		contentPane.add(lblColor);
+		
+		JLabel lblSize = new JLabel("Size");
+		lblSize.setBounds(610, 29, 56, 16);
+		contentPane.add(lblSize);
+		
+		JLabel lblPrice = new JLabel("Price");
+		lblPrice.setBounds(764, 29, 56, 16);
+		contentPane.add(lblPrice);
 	}
 }
