@@ -48,43 +48,41 @@ public class BikeGuUI extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JTextArea textArea = new JTextArea();
 		textArea.setBounds(73, 58, 248, 356);
 		contentPane.add(textArea);
-		
+
 		textColor = new JTextField();
 		textColor.setBounds(407, 55, 146, 26);
 		contentPane.add(textColor);
 		textColor.setColumns(10);
-		
+
 		textSize = new JTextField();
 		textSize.setColumns(10);
 		textSize.setBounds(568, 55, 146, 26);
 		contentPane.add(textSize);
-		
+
 		textPrice = new JTextField();
 		textPrice.setColumns(10);
 		textPrice.setBounds(723, 55, 146, 26);
 		contentPane.add(textPrice);
-		
+
+		/** Button for creating a bike */
 		JButton btnCreateBike = new JButton("Create Bike");
 		btnCreateBike.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				BikeStore.addBike(textColor.getText(), Integer.parseInt(textSize.getText()),Integer.parseInt(textPrice.getText()));
-				
+				BikeStore.addBike(textColor.getText(), Integer.parseInt(textSize.getText()),
+						Integer.parseInt(textPrice.getText()));
 				textColor.setText("");
 				textSize.setText("");
-				textPrice.setText("");	
-				
-				
-				
-				
+				textPrice.setText("");
+
 			}
 		});
+		/** Button to get all bikes in the array */
 		btnCreateBike.setBounds(489, 237, 115, 29);
 		contentPane.add(btnCreateBike);
-		
 		GetAll = new JButton("Get all bikes");
 		GetAll.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -93,19 +91,19 @@ public class BikeGuUI extends JFrame {
 		});
 		GetAll.setBounds(457, 294, 178, 29);
 		contentPane.add(GetAll);
-		
+
 		JLabel lblOutput = new JLabel("Output");
 		lblOutput.setBounds(166, 29, 56, 16);
 		contentPane.add(lblOutput);
-		
+
 		JLabel lblColor = new JLabel("Color");
 		lblColor.setBounds(449, 29, 56, 16);
 		contentPane.add(lblColor);
-		
+
 		JLabel lblSize = new JLabel("Size");
 		lblSize.setBounds(610, 29, 56, 16);
 		contentPane.add(lblSize);
-		
+
 		JLabel lblPrice = new JLabel("Price");
 		lblPrice.setBounds(764, 29, 56, 16);
 		contentPane.add(lblPrice);
