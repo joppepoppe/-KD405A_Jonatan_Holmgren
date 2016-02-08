@@ -16,6 +16,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 import java.awt.SystemColor;
+import javax.swing.JButton;
 
 public class Main extends JFrame {
 
@@ -138,5 +139,9 @@ public class Main extends JFrame {
 		JLabel lblPersonnummer = new JLabel("Personnummer");
 		lblPersonnummer.setBounds(128, 234, 116, 16);
 		contentPane.add(lblPersonnummer);
+		
+		JButton btnNewButton = new JButton("Save");
+		btnNewButton.setBounds(128, 313, 116, 56);
+		contentPane.add(btnNewButton);
 	}
 }
