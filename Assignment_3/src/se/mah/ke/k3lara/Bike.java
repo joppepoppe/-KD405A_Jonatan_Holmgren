@@ -1,6 +1,7 @@
 package se.mah.ke.k3lara;
 
 public class Bike {
+	
 
 	private static String color;
 	private static int price;
