@@ -11,8 +11,12 @@ public class House {
 	public House(int yearBuilt, int size) {
 		if(yearBuilt >= minYear && yearBuilt <= maxYear) {
 		this.yearBuilt = yearBuilt;
-		}
 		this.size = size;
+		} else {
+			this.yearBuilt=0;
+			this.size=0;
+		}
+		
 	}
 
 	public int getYearBuilt() {
@@ -20,6 +24,7 @@ public class House {
 	}
 
 	public int getSize() {
+		
 		return this.size;
 	}
 	

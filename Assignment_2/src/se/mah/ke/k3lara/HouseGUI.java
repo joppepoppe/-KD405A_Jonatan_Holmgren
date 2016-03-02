@@ -105,6 +105,7 @@ public class HouseGUI extends JFrame {
 		for (int z = 0; z < 100; z++) {
 			houseArmy.add(new House(r.nextInt(High - Low) + Low, r.nextInt(High1 - Low1) + Low1));
 		}
+		
 
 		textArea.append("assignment1.4" + "\n");
 		for (int p = 0; p < houseArmy.size(); p++) {
