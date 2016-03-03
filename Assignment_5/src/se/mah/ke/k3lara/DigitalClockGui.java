@@ -45,6 +45,8 @@ public class DigitalClockGui extends JFrame {
 	 * Create the frame.
 	 */
 	public DigitalClockGui() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(DigitalClockGui.class.getResource("/se/mah/ke/k3lara/2015-10-12_14h35_39.png")));
+		setTitle("JoppClock");
 		
 		
 		logic = new ClockLogic(this);
