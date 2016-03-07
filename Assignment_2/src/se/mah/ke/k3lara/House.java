@@ -13,8 +13,8 @@ public class House {
 		this.yearBuilt = yearBuilt;
 		this.size = size;
 		} else {
-			this.yearBuilt=0;
-			this.size=0;
+			this.yearBuilt=2015;
+			this.size=10;
 		}
 		
 	}
